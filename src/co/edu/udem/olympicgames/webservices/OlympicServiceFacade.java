@@ -9,7 +9,7 @@ import co.com.udem.OlympicGames.model.MedalDTO;
 import co.com.udem.OlympicGames.model.NewsDTO;
 
 public class OlympicServiceFacade {
-	public static OlympicServiceFacade olympicServiceFacade=null;
+	public static OlympicServiceFacade olympicServiceFacade = null;
 
 	public OlympicServiceFacade() {
 
@@ -21,27 +21,28 @@ public class OlympicServiceFacade {
 		}
 		return olympicServiceFacade;
 	}
-	
-	public List<NewsDTO> getNewsJPA(){
+
+	public List<NewsDTO> getNewsJPA() {
 		NewsServiceInterface newsServicesInterfce = new NewsServiceImpl();
 		return newsServicesInterfce.getNewsJPA();
 	}
-	
-	public List<HomeDTO> getHomeJPA(){
+
+	public List<HomeDTO> getHomeJPA() {
 		HomeServiceInterface homeServicesInterface = new HomeServiceImpl();
 		return homeServicesInterface.getHomeJPA();
 	}
-	public List<AthletesDTO>getAthletesJPA(){
+
+	public List<AthletesDTO> getAthletesJPA() {
 		AthlestesServiceInterface athlestesServicesInterface = new AthletesServiceImpl();
 		return athlestesServicesInterface.getAthletesJPA();
 	}
-	
-	public List<ArenasDTO>getArenasJPA(){
+
+	public List<ArenasDTO> getArenasJPA() {
 		ArenasServiceInterface arenasServiceInterface = new ArenasServiceImpl();
 		return arenasServiceInterface.getArenaJPA();
 	}
-	
-	public List<MedalDTO>getMedalJPA(){
+
+	public List<MedalDTO> getMedalJPA() {
 		MedalServiceInterface medalServiceInterface = new MedalServiceImpl();
 		return medalServiceInterface.getMedalJPA();
 	}
